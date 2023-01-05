@@ -20,6 +20,8 @@ function App() {
             type: "text",
             placeholder: "Username",
             label: "Username",
+            errorMessage: "Error Message for Username",
+            required: true,
         },
         {
             id: 2,
@@ -27,6 +29,8 @@ function App() {
             type: "text",
             placeholder: "Fullname",
             label: "Fullname",
+            errorMessage: "Error Message for Fullname",
+            required: true,
         },
         {
             id: 3,
@@ -34,6 +38,8 @@ function App() {
             type: "password",
             placeholder: "Password",
             label: "Password",
+            errorMessage: "Error Message for Password",
+            required: true,
         },
         {
             id: 4,
@@ -41,13 +47,8 @@ function App() {
             type: "password",
             placeholder: "Confirm Password",
             label: "Confirm Password",
-        },
-        {
-            id: 5,
-            name: "sth",
-            type: "text",
-            placeholder: "Sth",
-            label: "Sth",
+            errorMessage: "Error Message for Confirm password",
+            required: true,
         },
     ];
 

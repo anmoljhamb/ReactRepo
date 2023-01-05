@@ -1,6 +1,6 @@
 input {
     padding: 1.5rem;
-    margin: 1rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
 }
 
 .formInput {
@@ -8,8 +8,20 @@ input {
     display: flex;
     flex-direction: column;
     width: 25rem;
+    margin-bottom: 1rem;
 }
 
 .formInput label {
     font-weight: bold;
+}
+
+.formInput span {
+    color: red;
+    font-weight: bold;
+    display: none;
+    padding: 0.3rem;
+}
+
+input:invalid[focused="true"] ~ span {
+    display: block;
 }

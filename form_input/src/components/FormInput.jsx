@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FormInput.css";
 
 const FormInput = (props) => {
-    const { label, onChange, ...inputProps } = props;
+    const { label, onChange, errorMessage, ...inputProps } = props;
+    const [focused, setFocused] = useState(false);
 
     return (
         <div className="formInput">
@@ -11,7 +12,12 @@ const FormInput = (props) => {
                 onChange={onChange}
                 placeholder={props.placeholder}
                 {...inputProps}
+                onBlur={() => {
+                    setFocused(true);
+                }}
+                focused={focused.toString()}
             />
+            <span>{errorMessage}</span>
         </div>
     );
 };
