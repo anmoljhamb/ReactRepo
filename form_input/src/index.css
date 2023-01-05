@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+:root {
+    --primary: #130f40;
+    --secondary: #f9ca24;
+    --transition: all 0.3s ease-in-out;
+}
+
 * {
     margin: 0;
     padding: 0;

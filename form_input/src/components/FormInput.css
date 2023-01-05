@@ -2,3 +2,14 @@ input {
     padding: 1.5rem;
     margin: 1rem 0rem;
 }
+
+.formInput {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.formInput label {
+    font-weight: bold;
+}
